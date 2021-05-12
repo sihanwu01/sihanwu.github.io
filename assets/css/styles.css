@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;900&display=swap');
+
 .bd-placeholder-img {
   font-size: 1.125rem;
   text-anchor: middle;
@@ -33,6 +35,86 @@ p {
   font-family: "Roboto";
   font-weight: 400;
 }
+button {
+  border-radius: 0;
+}
+
+button:focus:not(:focus-visible) {
+  outline: 0;
+}
+
+input,
+button,
+select,
+optgroup,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+button,
+input {
+  overflow: visible;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+[role=button] {
+  cursor: pointer;
+}
+
+select {
+  word-wrap: normal;
+}
+
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+button:not(:disabled),
+[type=button]:not(:disabled),
+[type=reset]:not(:disabled),
+[type=submit]:not(:disabled) {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  padding: 0;
+  border-style: none;
+}
+
+button.close {
+  padding: 0;
+  background-color: transparent;
+  border: 0;
+}
+
+a.bg-primary:hover, a.bg-primary:focus,
+button.bg-primary:hover,
+button.bg-primary:focus {
+  background-color: #4f837f !important;
+}
+
+.bg-secondary {
+  background-color: #6c757d !important;
+}
+
+a.bg-dark:hover, a.bg-dark:focus,
+button.bg-dark:hover,
+button.bg-dark:focus {
+  background-color: #1d2124 !important;
+}
 
 #mainNav {
   min-height: 3.5rem;
@@ -65,8 +147,8 @@ p {
 }
 
 .navbar-brand {
-  font-family: "Playfair Display script=latin rev=3";
-  font-weight: 400;
+  font-family: "Poppins";
+  font-weight: 200;
   font-style: normal;
   line-height: 1.333;
   padding: 0.9rem 0;
@@ -78,6 +160,10 @@ p {
   background-color: #fff;
   color: black;
 } 
+
+.navbar-shrink .navbar-brand {
+  font-size: 2.5rem;
+}
 
 .navbar-light .navbar-nav .nav-link {
   color: black;
@@ -238,6 +324,10 @@ p {
   #welcome {
     margin-top: 45%;
   }
+}
+
+#projects {
+  padding-top: 100px;
 }
 
 #greeting {

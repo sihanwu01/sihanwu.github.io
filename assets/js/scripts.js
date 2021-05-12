@@ -15,7 +15,7 @@
           if (target.length) {
               anime({
                   targets: 'html, body',
-                  scrollTop: target.offset().top - 72,
+                  scrollTop: target.offset().top,
                   duration: 600,
                   easing: 'easeInOutExpo'
               });
