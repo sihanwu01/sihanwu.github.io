@@ -16,7 +16,7 @@
               anime({
                   targets: 'html, body',
                   scrollTop: target.offset().top,
-                  duration: 600,
+                  duration: 300,
                   easing: 'easeInOutExpo'
               });
               return false;
@@ -31,18 +31,19 @@
 
   // Change Nav bar transparency
   var navbarChange = function () {
-      if ($("#mainNav").offset().top > 100) {
+      if ($("#mainNav").offset().top > 100 || $(window).width() < 992) {
           $("#mainNav").addClass("navbar-shrink");
       } else {
           $("#mainNav").removeClass("navbar-shrink");
       }
   };
 
-  // Change now if page is not at top
   navbarChange();
 
-  // Change the navbar when page is scrolled
+  // Change the navbar when page is scrolled or resizes
   $(window).scroll(navbarChange);
+
+  $(window).on('resize', navbarChange);
 
 })(jQuery);
 
@@ -111,7 +112,7 @@ anime.timeline({loop: true})
 //hover highlights
 function hoverNav(el){
   var e = document.getElementById(el);
-  e.style.color = "#64a19d";
+  e.style.color = "#50a9ae";
 }
 
 function hoverOut(el){

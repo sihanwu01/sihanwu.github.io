@@ -89,32 +89,7 @@ button:not(:disabled),
 button::-moz-focus-inner,
 [type=button]::-moz-focus-inner,
 [type=reset]::-moz-focus-inner,
-[type=submit]::-moz-focus-inner {
-  padding: 0;
-  border-style: none;
-}
 
-button.close {
-  padding: 0;
-  background-color: transparent;
-  border: 0;
-}
-
-a.bg-primary:hover, a.bg-primary:focus,
-button.bg-primary:hover,
-button.bg-primary:focus {
-  background-color: #4f837f !important;
-}
-
-.bg-secondary {
-  background-color: #6c757d !important;
-}
-
-a.bg-dark:hover, a.bg-dark:focus,
-button.bg-dark:hover,
-button.bg-dark:focus {
-  background-color: #1d2124 !important;
-}
 
 #mainNav {
   min-height: 3.5rem;
@@ -143,7 +118,7 @@ button.bg-dark:focus {
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
-  color: #64a19d;
+  color: #50a9ae;
 }
 
 .navbar-brand {
@@ -156,13 +131,30 @@ button.bg-dark:focus {
   font-size: 2.9rem;
 }
 
+.navbar-light .navbar-brand:hover{
+  color: white;
+}
+
+.navbar-light .navbar-brand:focus{
+  color: white;
+}
+
 .navbar-shrink {
   background-color: #fff;
   color: black;
 } 
 
 .navbar-shrink .navbar-brand {
+  color:black;
   font-size: 2.5rem;
+}
+
+.navbar-shrink .navbar-brand:hover {
+  color: black;
+}
+
+.navbar-shrink .navbar-brand:focus {
+  color: black;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -207,21 +199,21 @@ button.bg-dark:focus {
 
 .btn-primary {
   color: #fff;
-  background-color: #64a19d;
-  border-color: #64a19d;
+  background-color: #50a9ae;
+  border-color: #50a9ae;
   margin-top: 110px;
 }
 
 .btn-primary:hover {
   color: #fff;
-  background-color: #548b87;
-  border-color: #4f837f;
+  background-color: #3e9297;
+  border-color: #3e9297;
 }
 
-.btn-primary:active {
+.btn-primary:focus {
   color: #fff;
-  background-color: #548b87;
-  border-color: #4f837f;
+  background-color: #3e9297;
+  border-color: #3e9297;
 }
 
 .align-items-center {
@@ -261,9 +253,9 @@ button.bg-dark:focus {
   position: relative;
   width: 100%;
   height: auto;
-  min-height: 35rem;
+  min-height: 55rem;
   padding: 15rem 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000000 100%), url(../images/back.jpg);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%,  rgba(0, 0, 0, 0.3) 50%, rgba(138, 138, 138, 0.3) 80%, #fff 100%), url(../images/p4.png);
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -291,9 +283,9 @@ button.bg-dark:focus {
     padding: 2rem 1.5rem;
   }
   #mainNav.nav-link.active {
-    color: #64a19d;
+    color: #50a9ae;
     outline: none;
-    border-bottom: 0.25rem solid #64a19d;
+    border-bottom: 0.25rem solid #50a9ae;
   }
   .masthead {
     height: 100vh;
@@ -319,7 +311,7 @@ button.bg-dark:focus {
     color: black;
   }
   #mainNav.navbar-shrink .nav-link:hover {
-    color: #64a19d;
+    color: #50a9ae;
   }
   #welcome {
     margin-top: 45%;
@@ -381,12 +373,10 @@ button.bg-dark:focus {
 }
 
 .fa {
-  padding: 20px;
-  font-size: 30px;
-  width: 30px;
+  width: 40px;
   text-align: center;
   text-decoration: none;
-  margin: 5px 2px;
+  margin: 5px;
   border-radius: 50%;
 }
 
@@ -404,7 +394,17 @@ button.bg-dark:focus {
   color: white;
 }
 
+.fa-envelope {
+  background: black;
+  color: white;
+}
+
 #socialMedia {
   margin-left: auto;
   margin-right: auto;
+  padding: 20px;
+}
+
+#socialMedia a:hover{
+  color: #50a9ae;
 }
