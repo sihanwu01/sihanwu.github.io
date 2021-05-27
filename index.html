@@ -1,127 +1,152 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Sihan Wu</title>
-    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
-    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
-    <!--Bootstrap-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
-    <!--Styles.css-->
-    <link href="assets/css/styles.css" rel="stylesheet" />
-    <!--Icons-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!--Google Fonts-->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300&display=swap" rel="stylesheet">
-  </head>
-  
-  <body id="page-top">
-    <!-- Navigation-->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-      <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top" id="mainName">Sihan Wu</a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse flex-grow-1 text-right" id="navbarCollapse">
-          <ul class="navbar-nav ms-auto flex-nowrap" id="navName">
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" aria-current="page" href="#projects" id="current">Work</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">About</a>
-            </li>
-          </ul>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sihan Wu</title>
+  <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+  <!--Bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+  <!--Styles.css-->
+  <link href="assets/css/styles.css" rel="stylesheet" />
+  <!--Icons-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!--Google Fonts-->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300&display=swap"
+    rel="stylesheet">
+</head>
+
+<body id="page-top">
+  <!-- Navigation-->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top" id="mainName">Sihan Wu</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse flex-grow-1 text-right" id="navbarCollapse">
+        <ul class="navbar-nav ms-auto flex-nowrap" id="navName">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" aria-current="page" href="#projects" id="current">Work</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Masthead-->
+  <header class="masthead">
+    <div class="container d-flex h-100 align-items-center">
+      <div class="mx-auto text-center" id="welcome">
+        <h1 class="mx-auto my-0" id="greeting">Hi, I'm Sihan.</h1>
+        <h1 class="animation">
+          <span class="letters letters-1">Designer</span>
+          <span class="letters letters-2">Developer</span>
+          <span class="letters letters-3">Artist</span>
+        </h1>
+        <a class="btn btn-primary js-scroll-trigger" href="#projects">Explore</a>
+      </div>
+    </div>
+  </header>
+  <!-- Projects-->
+  <section class="projects-section bg-light" id="projects">
+    <div class="container">
+      <!-- Portfolio Grid Items-->
+      <div class="row justify-content-center">
+        <!--Development-->
+        <div class="divider-custom">
+          <!-- <div class="divider-custom-line"></div> -->
+          <h3 class="page-section-heading text-center text-secondary mb-0">Development</h3>
+          <!-- <div class="divider-custom-line"></div> -->
+        </div>
+        <!-- Portfolio Item 1-->
+        <div class="col-md-6 col-lg-4 mb-5">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
+            <a href="projects/lynnette.html">
+              <div class="img-container">
+                <img src="assets/images/lyn-cov.jpg" class="img-fluid" alt="Lynnette Gamification">
+                <div class="overlay">
+                  <span>Lynnette Gamification</span>
+                </div>
+              </div>
+              <!-- <img class="img-fluid" src="assets/images/project1.jpg" alt="Lynnette Gamification Project" /> -->
+            </a>
+          </div>
+          <!-- <h3 class="span12 text-center" style="margin-top:10px">Lynnette Gamification</h3> -->
+        </div>
+        <!-- Portfolio Item 2-->
+        <div class="col-md-6 col-lg-4 mb-5">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
+            <a href="projects/sciquiz.html">
+              <div class="img-container">
+                <img src="assets/images/sq-cov.jpg" class="img-fluid" alt="ScienceQuiz">
+                <div class="overlay">
+                  <span>ScienceQuiz</span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- Portfolio Item 3-->
+        <div class="col-md-6 col-lg-4 mb-5">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
+            <a href="projects/ecom.html">
+              <div class="img-container">
+                <img src="assets/images/ecom-cov.jpg" class="img-fluid" alt="E-Commerce Websites">
+                <div class="overlay">
+                  <span>E-Commerce Site Development</span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!--Design-->
+        <div class="divider-custom">
+          <h3 class="page-section-heading text-center text-secondary mb-0">Design</h3>
+        </div>
+        <!-- Portfolio Item 4-->
+        <div class="col-md-6 col-lg-4 mb-5">
+          <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
+            <a href="projects/rv.html">
+              <div class="img-container">
+                <img src="assets/images/rv-cov.jpg" class="img-fluid" alt="River Otter Virtual Tour">
+                <div class="overlay">
+                  <span>River Otter Virtual Tour</span>
+                </div>
+              </div>
+            </a>
+          </div>
         </div>
       </div>
-    </nav>
-    <!-- Masthead-->
-    <header class="masthead">
-      <div class="container d-flex h-100 align-items-center">
-          <div class="mx-auto text-center" id="welcome">
-              <h1 class="mx-auto my-0" id="greeting">Hi, I'm Sihan.</h1>
-              <h1 class="animation">
-                <span class="letters letters-1">Designer</span>
-                <span class="letters letters-2">Developer</span>
-                <span class="letters letters-3">Artist</span>
-              </h1>
-              <a class="btn btn-primary js-scroll-trigger" href="#projects">Explore</a>
-          </div>
-      </div>
-    </header>
-    <!-- Projects-->
-    <section class="projects-section bg-light" id="projects">
-      <div class="container">
-        <!-- Portfolio Grid Items-->
-        <div class="row justify-content-center">
-            <!-- Portfolio Item 1-->
-            <div class="col-lg-6 col-lg-4 mb-5">
-              <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal1">
-                <a href="projects/project1.html">
-                  <div class="img-container">
-                    <img src="assets/images/project1.jpg" class="img-fluid">
-                    <div class="overlay">
-                      <span>Lynnette Gamification</span>
-                    </div>
-                  </div>
-                  <!-- <img class="img-fluid" src="assets/images/project1.jpg" alt="Lynnette Gamification Project" /> -->
-                </a>
-              </div>
-              <!-- <h3 class="span12 text-center" style="margin-top:10px">Lynnette Gamification</h3> -->
-            </div>
-            <!-- Portfolio Item 2-->
-            <div class="col-lg-6 col-lg-4 mb-5">
-                <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal2">
-                  <a href="projects/project2.html">
-                    <div class="img-container">
-                      <img src="assets/images/project2.jpg" class="img-fluid">
-                      <div class="overlay">
-                        <span>ScienceQuiz</span>
-                      </div>
-                    </div>
-                    <!-- <img class="img-fluid" src="assets/images/project2.jpg" alt="ScienceQuiz" /> -->
-                  </a>  
-                </div>
-                <!-- <h3 class="span12 text-center" style="margin-top:10px">ScienceQuiz</h3> -->
-            </div>
-            <!-- Portfolio Item 3-->
-            <div class="col-lg-6 col-lg-4 mb-5">
-                <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
-                  <a href="projects/project3.html">
-                    <img class="img-fluid" src="assets/images/project3.jpg" alt="Bun Bun Bake Shop" />
-                  </a>  
-                </div>
-                <h3 class="span12 text-center" style="margin-top:10px">Bun Bun Bake Shop</h3>
-            </div>
-            <!-- Portfolio Item 4-->
-            <div class="col-lg-6 col-lg-4 mb-5">
-              <div class="portfolio-item mx-auto" data-toggle="modal" data-target="#portfolioModal3">
-                <a href="projects/project4.html">
-                  <img class="img-fluid" src="assets/images/project4.jpg" alt="River Otter Virtual Tour" />
-                </a>  
-              </div>
-              <h3 class="span12 text-center" style="margin-top:10px">River Otter Virtual Tour</h3>
-          </div>
-          </div>
-      </div>
-    </section>
-    <!-- Footer-->
-    <footer class="footer bg-black small text-center text-white-50">
-      <div class="col-lg-4 mb-lg-0" id="socialMedia">
-        <a href="https://www.facebook.com/sihan.wu.10" target="_blank" class="fa fa-facebook"></a>
-        <a href="https://www.linkedin.com/in/sihan-wu-87b87a1a3/" target="_blank" class="fa fa-linkedin"></a>
-				<a href="mailto:sihanw016@gmail.com" target="_blank" class="fa fa-envelope"></a>
-      </div>
-      <div class="container">
-        Copyright &copy; Sihan Wu
-      </div>
-    </footer>
-    <!--JavaScript Links-->
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
-    <script src="assets/js/scripts.js"></script>
-  </body>
+    </div>
+  </section>
+  <!-- Footer-->
+  <footer class="footer bg-black small text-center text-white-50">
+    <div class="col-lg-4 mb-lg-0 social" id="socialMedia">
+      <a href="https://www.facebook.com/sihan.wu.10" target="_blank" class="fa fa-facebook"></a>
+      <a href="https://www.linkedin.com/in/sihan-wu-87b87a1a3/" target="_blank" class="fa fa-linkedin"></a>
+      <a href="mailto:sihanw016@gmail.com" target="_blank" class="fa fa-envelope"></a>
+    </div>
+    <div class="container">
+      Copyright &copy; Sihan Wu
+    </div>
+  </footer>
+  <!--JavaScript Links-->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+  <script src="assets/js/scripts.js"></script>
+</body>
+
 </html>

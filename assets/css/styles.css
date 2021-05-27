@@ -22,19 +22,42 @@ header {
   display: block;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h3, h6 {
   margin-top: 0;
   margin-bottom: 0.5rem;
   font-family: "Roboto";
   font-weight: 300;
 }
 
+h2 {
+  margin-top:40px;
+  margin-bottom: 40px;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 3rem;
+}
+
+h4 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-family: "Open Sans";
+  font-weight: 600;
+}
+
+h5 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-family: "Open Sans";
+  font-weight: 400;
+}
+
 p {
   margin-top: 10px;
   margin-bottom: 10px;
-  font-family: "Roboto";
+  font-family: "Open Sans";
   font-weight: 400;
 }
+
 button {
   border-radius: 0;
 }
@@ -90,6 +113,15 @@ button::-moz-focus-inner,
 [type=button]::-moz-focus-inner,
 [type=reset]::-moz-focus-inner,
 
+.container {
+  flex-flow: nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#project {
+  padding: 0.5rem 2.5rem;
+}
 
 #mainNav {
   min-height: 3.5rem;
@@ -183,6 +215,14 @@ button::-moz-focus-inner,
     box-shadow: none;
 }
 
+.navbar-top {
+  position:absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
 .btn {
   box-shadow: 0 0.1875rem 0.1875rem 0 rgb(0 0 0 / 10%) !important;
   padding: 1.25rem 2rem;
@@ -255,7 +295,7 @@ button::-moz-focus-inner,
   height: auto;
   min-height: 55rem;
   padding: 15rem 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%,  rgba(0, 0, 0, 0.3) 50%, rgba(138, 138, 138, 0.3) 80%, #fff 100%), url(../images/p4.png);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%,  rgba(0, 0, 0, 0.3) 50%, rgba(138, 138, 138, 0.3) 80%, #fff 100%), url(../images/masthead.png);
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -319,7 +359,7 @@ button::-moz-focus-inner,
 }
 
 #projects {
-  padding-top: 100px;
+  padding-top: 60px;
 }
 
 #greeting {
@@ -328,7 +368,7 @@ button::-moz-focus-inner,
 }
 
 .mb-5 {
-  margin-bottom: 6rem!important;
+  margin-bottom: 5rem!important;
 }
 
 .image {
@@ -363,6 +403,67 @@ button::-moz-focus-inner,
   margin-bottom: 0px;
 }
 
+.img-container{
+  position:relative;
+  display:inline-block;
+}
+
+.img-container .overlay{
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:#0000008c;
+  opacity:0;
+  transition:opacity 300ms ease-in-out;
+}
+
+.img-container:hover .overlay{
+  opacity:1;
+}
+
+.overlay span{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  color:#fff;
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 2.2rem;
+  text-align: center;
+}
+
+.divider-custom {
+  margin: 1.7rem 0 3rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.divider-custom .divider-custom-line {
+  width: 100%;
+  max-width: 7rem;
+  height: 0.12rem;
+  background-color: #a3a5a7;
+  border-radius: 1rem;
+  border: none;
+}
+
+.divider-custom .divider-custom-line:first-child {
+  margin-right: 1rem;
+}
+
+.divider-custom .divider-custom-line:last-child {
+  margin-left: 1rem;
+}
+
+.overview {
+  padding: 1rem;
+}
+
 .footer {
   padding: 5rem 0;
   margin-top: 5%;
@@ -370,6 +471,20 @@ button::-moz-focus-inner,
 
 .bg-black {
   background-color: #000000 !important;
+}
+
+.social a {
+  text-align: center;
+  height: 3rem;
+  width: 3rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 100%;
+  line-height: 3rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.social a:hover {
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .fa {
@@ -409,34 +524,17 @@ button::-moz-focus-inner,
   color: #50a9ae;
 }
 
-.img-container{
-  position:relative;
-  display:inline-block;
+.video-fluid {
+  width: 100%;
+  height: auto;
+  margin: 1rem 0;
 }
 
-.img-container .overlay{
-  position:absolute;
-  top:0;
-  left:0;
-  width:100%;
-  height:100%;
-  background:#0000008c;
-  opacity:0;
-  transition:opacity 300ms ease-in-out;
+#btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
 }
 
-.img-container:hover .overlay{
-  opacity:1;
-}
 
-.overlay span{
-  position:absolute;
-  top:50%;
-  left:50%;
-  transform:translate(-50%,-50%);
-  color:#fff;
-  font-family: "Roboto";
-  font-weight: 300;
-  font-size: 2.5rem;
-  text-align: center;
-}
