@@ -464,6 +464,11 @@ button::-moz-focus-inner,
   padding: 1rem;
 }
 
+.overview h5 {
+  color: #50a9ae;
+  font-weight:600;
+}
+
 .footer {
   padding: 5rem 0;
   margin-top: 5%;
@@ -531,10 +536,33 @@ button::-moz-focus-inner,
 }
 
 #btn-back-to-top {
+  transition-timing-function: ease;
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 30px;
+  right: 30px;
   display: none;
+  padding:0;
+  width: 4.5rem;
+  height: 4.5rem;
+  border-radius: 50%;
+  background:rgba(255, 255, 255, 0.5);
+}
+
+.fa-angle-up {
+  background: transparent;
+  color: #50a9ae;
+}
+
+#angle-up {
+  font-weight: 900;
+  font-size: 2rem;
+}
+
+.box {
+  background: #dcf1f3b0;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-bottom: 5%;
 }
 
 
