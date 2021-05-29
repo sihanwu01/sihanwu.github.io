@@ -48,7 +48,7 @@ h5 {
   margin-top: 1rem;
   margin-bottom: 1rem;
   font-family: "Open Sans";
-  font-weight: 400;
+  font-weight: 600;
 }
 
 p {
@@ -435,6 +435,13 @@ button::-moz-focus-inner,
   text-align: center;
 }
 
+.overlay i {
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+}
+
 .divider-custom {
   margin: 1.7rem 0 3rem;
   width: 100%;
@@ -553,6 +560,15 @@ button::-moz-focus-inner,
   color: #50a9ae;
 }
 
+.fa-external-link-alt {
+  text-align: center;
+  text-decoration: none;
+  margin-top: auto;
+  margin-bottom: auto;
+  color: white;
+  font-size: 6rem;
+}
+
 #angle-up {
   font-weight: 900;
   font-size: 2rem;
@@ -563,6 +579,19 @@ button::-moz-focus-inner,
   padding: 1rem;
   border-radius: 10px;
   margin-bottom: 5%;
+}
+
+#swimming {
+  z-index:2;
+  width: 100%;
+  margin-top: -95px;
+  transform: rotate(18deg);
+}
+
+@media (max-width: 992px) {
+  #swimming {
+    display:none;
+  }
 }
 
 
