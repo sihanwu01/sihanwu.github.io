@@ -47,6 +47,10 @@
 
 })(jQuery);
 
+(function ($) {
+  $('.carousel').carousel('pause');
+})(jQuery);
+
 // Text Animation
 var animation = {};
 animation.opacityIn = [0,1];
@@ -146,3 +150,4 @@ function backToTop() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+

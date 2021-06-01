@@ -632,3 +632,42 @@ button::-moz-focus-inner,
 .short p a{
   color:#50a9ae;
 }
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  height: 100px;
+  width: 100px;
+  background-size: 100%, 100%;
+  background-image: none;
+}
+
+.carousel-control-next-icon:after
+{
+  content: '>';
+  font-size: 55px;
+  color:#50a9ae;
+  border-radius:20%;
+}
+
+.carousel-control-prev-icon:after {
+  content: '<';
+  font-size: 55px;
+  color:#50a9ae;
+  border-radius: 20%;
+}
+
+.carousel-indicators li {
+  background-color:#50a9ae80;
+}
+
+.carousel-indicators .active {
+  background-color:#50a9ae;
+}
+
+.carousel {
+  margin: 0 auto;
+}
+
+.carousel-indicators {
+  bottom: 2px;
+}
