@@ -47,10 +47,6 @@
 
 })(jQuery);
 
-(function ($) {
-  $('.carousel').carousel('pause');
-})(jQuery);
-
 // Text Animation
 var animation = {};
 animation.opacityIn = [0,1];
